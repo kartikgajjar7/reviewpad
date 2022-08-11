@@ -312,3 +312,7 @@ func (c *GithubClient) EditPullRequest(ctx context.Context, owner string, repo s
 func (c *GithubClient) Merge(ctx context.Context, owner string, repo string, number int, commitMessage string, options *github.PullRequestOptions) (*github.PullRequestMergeResult, *github.Response, error) {
 	return c.clientREST.PullRequests.Merge(ctx, owner, repo, number, commitMessage, options)
 }
+
+func (c *GithubClient) RebasePullRequest(ctx context.Context, baseBranch string, headBranch string, baseOwner string, headOwner string) error {
+	return nil
+}

@@ -77,6 +77,7 @@ func PluginBuiltIns() *aladino.BuiltIns {
 			"fail":                 actions.Fail(),
 			"merge":                actions.Merge(),
 			"removeLabel":          actions.RemoveLabel(),
+			"rebase":               actions.Rebase(),
 		},
 	}
 }
