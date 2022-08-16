@@ -48,7 +48,6 @@ type BaseEnv struct {
 	PullRequest              *github.PullRequest
 	RegisterMap              RegisterMap
 	Report                   *Report
-	GHToken                  string
 }
 
 func (e *BaseEnv) GetBuiltIns() *BuiltIns {
